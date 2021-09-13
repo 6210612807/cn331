@@ -1,0 +1,18 @@
+{% extends "subject/layout.html" %}
+
+{% block body %}
+
+    <h1>Course : {{ subject.id }}</h1>
+
+    <ul>
+        <li>Name: {{ subject.name }}</li>
+        <li>Semester: {{ subject.semester }}</li>
+        <li>Year: {{ subject.year }}</li>
+        <li>Quantity: {{ subject.quantity }}</li>
+    </ul>
+    
+    <p><a href="{% url 'subject:index' %</p>
+
+
+
+{%endblock %}
